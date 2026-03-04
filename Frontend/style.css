@@ -124,3 +124,97 @@ body {
 .send-button:hover {
     background-color: #0056b3;
 }
+
+/* Container to hold both the sidebar and the chat window */
+.app-container {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 800px; /* Wider to accommodate both panels */
+}
+
+/* Sidebar Layout */
+.sidebar {
+    width: 250px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.sidebar-header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 20px;
+    border-bottom: 1px solid #0056b3;
+}
+
+.sidebar-header h3 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+/* General Button Group Spacing */
+.button-group {
+    display: flex;
+    padding: 20px;
+}
+
+/* Primary Action Buttons (Large) */
+.primary-actions {
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn {
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 8px;
+}
+
+.primary-btn {
+    background-color: #f0f2f5;
+    color: #333;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    border: 1px solid #e0e0e0;
+}
+
+.primary-btn:hover {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+}
+
+/* Pushes the secondary actions to the bottom */
+.spacer {
+    flex: 1; 
+}
+
+/* Secondary Action Buttons (Mini) */
+.secondary-actions {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+}
+
+.mini-btn {
+    background-color: transparent;
+    color: #666;
+    padding: 8px 10px;
+    font-size: 12px;
+    flex: 1; /* Makes them stretch evenly */
+}
+
+.mini-btn:hover {
+    background-color: #e4e6e9;
+    color: #333;
+}
